@@ -51,16 +51,7 @@ greetings(friends)
 
 
 //alternative Assignment2
-function pallindrum(){
- let word=prompt('enter a word')
-let reverseWord = word.split('').reverse().join('')
-if(reverseWord.toLowerCase() === word.toLowerCase()){
-  alert('This word is a pallindrum')
-}else if(reverseWord.toLowerCase() !== word.toUpperCase()){
-  alert('This is not a pallindrum')
-}
-}
-pallindrum()
+// z
 // function add(num1,num2) {
 //  console.log(num1 + num2) 
 // }
@@ -105,24 +96,21 @@ pallindrum()
 // }
 // calc()
 
-// function GPA(score,grade) {
-//   var score=prompt('enter your score humbly')
-//   if(score >= 70 && score<= 100){alert('distinction')}
-//   else if(score >= 60 && score <= 50){
-//     alert('upper credit')
-//   }
-// }
-// GPA()
+function GPA(score,grade) {
+  var score=prompt('enter your score humbly')
+  if(score >= 70 && score<= 100){alert('distinction')}
+  else if(score >= 60 && score <= 50){
+    alert('upper credit')
+  }
+  return score
+}
+GPA()
 
 // function names(name,grade) {
 //   console.log(`hey ${name} your score is ${grade}`);
   
 // }
 // names('NOIBISJUNIOR','A')
-
-
-
-
 
 
 
