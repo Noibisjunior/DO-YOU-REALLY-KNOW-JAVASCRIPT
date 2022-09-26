@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @media (min-width : 468px) {
+            .container-1 {
+            display : flex;
+            /* align-items: flex-end; -- defines the height of item's container to the bottom
+               align-items: flex-start; -- defines the height of item's container to the top */
+            /* align-items:center; -- defines the height of the item's content and aligns content to the center */
+            /* align-items : stretch - default */
+            /* flex-direction:column; -- defines the direction. (row/column)*/
+        }
+
+        .container-2 { 
+            display: flex;
+            /* justify-content:flex-end; -- Justifies flex content to the end */
+            /* justify-content: flex-start; -- Justifies flex content to the start */
+            /* justify-content:center; -- Justifies flex content to the center */
+            /* justify-content: space-around; -- Creates padding around all the text contexts */
+            justify-content: space-between ;
+        }
+
+        .container-3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        }
+
+        .container-1 div, .container-2 div, .container-3 div {
+            border: 1px #ccc solid;
+            padding : 10px
+        }
+
+        .box-1 {
+            flex: 2; 
+            order : 2
+        }
+        .box-2 {
+            flex : 1;
+            order : 1;
+        }
+
+        .box-3 {
+            flex: 1;
+            order: 3;
+        }
+
+        .container-2-box{
+            /* width : 27%;    or you could use flex bases to edit the width    */
+            flex-basis: 27%;
+         }
+
+         .container-3 box {
+            flex-basis: 15%;
+            /* flex-wrap: wrap-reverse; -- for a responsive column */
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>This is the H3 content for box1</p>
+        </div>
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>This is the H3 content for box2</p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>This is the H3 content for box3</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box Four</h3>
+            <p>This is the H3 content for box4</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Five</h3>
+            <p>This is the H3 content for box5</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Six</h3>
+            <p>This is the H3 content for box6</p>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div class="container-3-box">
+            <h3>Box Seven</h3>
+            <p>This is the H3 content for box7</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Eight</h3>
+            <p>This is the H3 content for box8</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Nine</h3>
+            <p>This is the paragraph content for box9</p>
+        </div>
+    </div>
+</body>
+</html>
