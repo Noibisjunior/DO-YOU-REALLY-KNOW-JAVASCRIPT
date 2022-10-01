@@ -86,7 +86,7 @@
           display: block;
         }
         #check:checked ~ ul {
-          left: 0;
+          left: 0px ;
         }
 
         #check:checked ~ label #btn {
