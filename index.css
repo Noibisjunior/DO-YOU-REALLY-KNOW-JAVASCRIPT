@@ -11,6 +11,12 @@
     text-align: right;
     padding-right: 10px;
     line-height: 80px;
+    font-size: 15px;
+}
+#display,#Answer{
+    text-align: right;
+    padding-right: 10px;
+    line-height: 60px;
     font-size: 30px;
 }
 

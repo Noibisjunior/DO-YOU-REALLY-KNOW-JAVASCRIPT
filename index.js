@@ -1,7 +1,7 @@
 // let display = document.getElementById('display');
 
 // let buttons = Array.from(document.getElementsByClassName('button'));
- console.log(Array.isArray(buttons));
+//  console.log(Array.isArray(buttons));
 
 // buttons.map((button) => {
 //   button.addEventListener('click', (e) => {
@@ -35,6 +35,7 @@
 // });
 
 const display = document.getElementById('display');
+const Answer = document.getElementById('Answer');
 
 const buttons = Array.from(document.getElementsByClassName('button'));
 
@@ -44,6 +45,7 @@ buttons.map((button) => {
       case 'C':
         if (display.innerText !== '') {
           display.innerText = '';
+          Answer.innerText = '';
         } else {
           display.innerText = `${display.innerText} is not valid`;
         }
@@ -51,11 +53,12 @@ buttons.map((button) => {
 
       case '←':
         display.innerText = display.innerText.slice(0, -1);
+        Answer.innerText = Answer.innerText.slice(0, -1);
         break;
 
       case '=':
         try {
-          display.innerText = eval(display.innerText);
+          Answer.innerText = eval(display.innerText);
         } catch (error) {
           display.innerText =
             error.message = `(${display.innerText}) is a syntax error`;
