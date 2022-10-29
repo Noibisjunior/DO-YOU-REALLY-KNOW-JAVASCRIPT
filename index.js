@@ -1,7 +1,7 @@
 // let display = document.getElementById('display');
 
 // let buttons = Array.from(document.getElementsByClassName('button'));
-// // console.log(Array.isArray(buttons));
+ console.log(Array.isArray(buttons));
 
 // buttons.map((button) => {
 //   button.addEventListener('click', (e) => {
