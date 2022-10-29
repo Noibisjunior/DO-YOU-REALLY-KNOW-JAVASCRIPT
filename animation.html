@@ -14,7 +14,7 @@
         animation-name: movement;
         animation-duration: 5s;
         animation-iteration-count: infinite;
-        animation-direction: alternate;
+        animation-direction: alternate-reverse;
         /* animation-direction: alternate-reverse; */
         animation-timing-function: linear;
       }
@@ -45,11 +45,33 @@
           top: 0px;
         }
       }
+       button {
+        border: 2px solid black;
+        background-color: orange;
+        color: white;
+        border-radius: 20px;
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
+      } 
+    
+      button:hover {
+        position: relative;
+        animation: scale 3s infinite ease-out both;
+      }
+      @keyframes scale {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 200px;
+          background-color: green;
+        }
+      }
     </style>
   </head>
   <body>
-    <div>
-        Animation Movement
-    </div>
+    <div>Animation Movement</div>
+    <button>SUBMIT</button>
   </body>
 </html>
